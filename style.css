@@ -50,7 +50,6 @@ a{
 }
 
 #theme-switch svg:hover {
-    filter: brightness(.9);
     fill: var(--link-color);
 }
 
@@ -101,6 +100,7 @@ nav .right a span {
 nav .right .links a:hover {
     color: var(--link-color);
 }
+
 /* SECTION 1: HERO */
 
 .hero-section {
