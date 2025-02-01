@@ -412,8 +412,6 @@ nav .right .links a:hover {
 
     .hero-section .headshot {
         width: 300px;
-        display: flex;
-        justify-content: center;
     }
 
     /* SECTION 4: Career */
@@ -456,6 +454,11 @@ nav .right .links a:hover {
     /* SECTION 1: Hero */
     .hero-section {
         padding: 0 20px;
+    }
+    
+    .hero-section .headshot {
+        display: flex;
+        justify-content: center;
     }
 
     .hero-section .text h2 {
