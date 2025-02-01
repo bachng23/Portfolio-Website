@@ -34,6 +34,7 @@ a{
     height: 40px;
     width: 40px;
     padding: 0;
+    border: 2px solid var(--text-color);
     border-radius: 50%;
     background-color: var(--background-color);
     display: flex;
@@ -46,6 +47,11 @@ a{
 
 #theme-switch svg {
     fill: var(--text-color);
+}
+
+#theme-switch svg:hover {
+    filter: brightness(.9);
+    fill: var(--link-color);
 }
 
 #theme-switch svg:last-child {
