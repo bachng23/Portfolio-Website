@@ -4,6 +4,12 @@
     --background-color: #eeeff1;
 }
 
+.darkmode {
+    --text-color: #fff;
+    --link-color: #4a76ee;
+    --background-color: #070b1d;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -24,12 +30,40 @@ a{
     text-decoration: none;
 }
 
+#theme-switch{
+    height: 40px;
+    width: 40px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    right: 10px;
+}
+
+#theme-switch svg {
+    fill: var(--text-color);
+}
+
+#theme-switch svg:last-child {
+    display: none;
+}
+
+.darkmode #theme-switch svg:first-child {
+    display: none;
+}
+
+.darkmode #theme-switch svg:last-child {
+    display: block;
+}
 /* NAVBAR */
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
     padding: 0 50px;
     height: 80px;
 }
@@ -38,11 +72,13 @@ nav .left a {
     color: var(--text-color);
     font-size: 22px;
     font-weight: 600;
+
 }
 
 nav .right a {
     color: var(--text-color);
     margin: 0 10px;
+
 }
 
 nav .right a:last-child {
@@ -73,6 +109,7 @@ nav .right .links a:hover {
 
 .hero-section .text {
     flex: 5;
+    color: var(--text-color);
 }
 
 .hero-section .text h2 {
@@ -113,11 +150,13 @@ nav .right .links a:hover {
 .experience-section h2 {
     text-align: center;
     font-size: 40px;
+    color: var(--text-color);
 }
 
 .experience-section .text {
     text-align: center;
     margin-bottom: 20px;
+    color: var(--text-color);
 }
 
 .experience-section .cells {
@@ -140,6 +179,7 @@ nav .right .links a:hover {
 
 .experience-section .cells .cell span {
     font-size: 18px;
+    color: var(--text-color);
 }
 
 .experience-section .cells .cell img {
@@ -159,6 +199,7 @@ nav .right .links a:hover {
     justify-content: center;
     font-size: 40px;
     margin-bottom: 30px;
+    color: var(--text-color);
 }
 
 .projects-section .projects{
@@ -177,6 +218,11 @@ nav .right .links a:hover {
     border-radius: 5%;
     padding-top: 5px;
     padding-bottom: 10px;
+}
+
+.projects-section .projects .small-projects h2,
+.projects-section .projects .small-projects h2 a span {
+    color: var(--text-color);
 }
 
 .projects-section .projects .small-projects img {
@@ -220,6 +266,7 @@ nav .right .links a:hover {
 .career-section h2 {
     font-size: 40px;
     margin-bottom: 30px;
+    color: var(--text-color);
 }
 
 .career-section .group {
@@ -242,6 +289,7 @@ nav .right .links a:hover {
 .career-section .group .university-details p {
     font-size: 18px;
     font-weight: 600;
+    color: var(--text-color);
 }
 
 .career-section .group .university-details p:last-child {
@@ -250,6 +298,7 @@ nav .right .links a:hover {
 
 .career-section .group .text {
     flex: 7;
+    color: var(--text-color);
 }
 
 
@@ -261,6 +310,7 @@ nav .right .links a:hover {
 
 .contact-section h2 {
     font-size: 40px;
+    color: var(--text-color);
 }
 
 .contact-section .group {
@@ -303,6 +353,10 @@ nav .right .links a:hover {
     margin-bottom: 15px;
     outline: none;
     resize: none;
+}
+
+.contact-section .group form label {
+    color: var(--text-color);   
 }
 
 .contact-section .group form button {
