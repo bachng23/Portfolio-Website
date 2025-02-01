@@ -202,19 +202,20 @@
                     </div>
                 </div>
                     
-
-                <form>
-                    <label for="name">Name</label>
-                    <input type="text" id="name">
-
-                    <label for="email">Email</label>
-                    <input type="email" id="email">
-
-                    <label for="message">Message</label>
-                    <textarea id="message" cols="30" rows="10"></textarea>
-
-                    <button type="submit">Send Message</button>
-                </form>
+                <div class="form">
+                    <form action="https://formsubmit.co/bachnguyen2326@gmail.com" method="POST">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" required id="name">
+    
+                        <label for="email">Email</label>
+                        <input type="email" name="email" required id="email">
+    
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required cols="30" rows="10"></textarea>
+    
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
             </div>
         </section>
 
